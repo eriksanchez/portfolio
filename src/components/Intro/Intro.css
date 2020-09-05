@@ -9,6 +9,8 @@
   align-content: center;
   justify-content: center;
   align-items: center;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 30%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
 }
 
 .ES_logo {
@@ -22,4 +24,10 @@
 
 .Title {
   width: 500px;
+  margin: 5px;
+}
+
+.SE_title {
+  width: 300px;
+  margin: 5px;
 }
