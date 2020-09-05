@@ -1,0 +1,25 @@
+.Intro {
+  background: url(https://media4.giphy.com/media/2HavnYT1BfENa/giphy.gif?cid=ecf05e47zuo7h06tyawg824f35pejfa0tucx79k4chx3uruz&rid=giphy.gif)
+    no-repeat center center fixed;
+  background-size: cover;
+  height: 700px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.ES_logo {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+
+.Title {
+  width: 500px;
+}
