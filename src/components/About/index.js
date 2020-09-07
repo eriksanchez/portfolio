@@ -5,7 +5,7 @@ import SkillCard from "./SkillCard";
 
 function About() {
   return (
-    <div>
+    <div style={{ backgroundColor: "beige" }}>
       <h1>Who Am I?</h1>
 
       <Grid divided="vertically">
