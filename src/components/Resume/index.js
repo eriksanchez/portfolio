@@ -1,6 +1,6 @@
 import React from "react";
 import { Timeline, Event } from "react-trivial-timeline";
-import { Grid, Image, Button } from "semantic-ui-react";
+import { Grid } from "semantic-ui-react";
 
 function Resume() {
   return (

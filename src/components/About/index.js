@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import { Grid, Image, Button } from "semantic-ui-react";
+import { Grid, Button } from "semantic-ui-react";
 import SkillCard from "./SkillCard";
 
 function About() {
