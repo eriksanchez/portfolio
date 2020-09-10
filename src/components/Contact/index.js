@@ -12,6 +12,7 @@ function Contact() {
   }
   return (
     <div className="container">
+      <h1>Contact Me</h1>
       <form>
         {/*single item*/}
         <div className="singleItem">
