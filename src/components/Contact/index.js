@@ -11,11 +11,11 @@ function Contact() {
     console.log(name, email, message);
   }
   return (
-    <div>
+    <div className="container">
       <form>
         {/*single item*/}
         <div className="singleItem">
-          <label htmlFor="name">name</label>
+          <label htmlFor="name">Name</label>
           <input
             type="text"
             name="name"
@@ -24,9 +24,10 @@ function Contact() {
           />
         </div>
         {/*end of single item*/}
+
         {/*single item*/}
         <div className="singleItem">
-          <label htmlFor="lastname">lastname</label>
+          <label htmlFor="lastname">Lastname</label>
           <input
             type="text"
             name="lastname"
@@ -37,15 +38,31 @@ function Contact() {
         {/*end of single item*/}
         {/*single item*/}
         <div className="singleItem">
-          <label htmlFor="email">email</label>
+          <label htmlFor="email">Email</label>
           <input
             type="text"
-            name="name"
-            className="name"
-            placeholder="your name..."
+            name="email"
+            className="email"
+            placeholder="your email..."
           />
         </div>
         {/*end of single item*/}
+        {/* single item */}
+        <div className="textArea singleItem">
+          <label htmlFor="message">Message</label>
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="5"
+            placeholder="your message..."
+          ></textarea>
+        </div>
+        {/*end of single item*/}
+        <div className="msg">Message has been sent</div>
+        <div className="btn">
+          <button type="submit">Submit</button>
+        </div>
       </form>
     </div>
   );
