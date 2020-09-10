@@ -1,22 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Contact.css";
 
 function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  function SubmitButton() {
+    console.log("This is a console log");
+    console.log(name, email, message);
+  }
   return (
     <div>
-      <form className="form">
-        <h1>Contact form</h1>
-
-        <label>Name</label>
-        <input placeholder="name" />
-
-        <label>Email</label>
-        <input placeholder="Email" />
-
-        <label>Message</label>
-        <textarea placeholder="Message"> </textarea>
-
-        <button type="submit">Submit</button>
+      <form>
+        {/*single item*/}
+        <div className="singleItem">
+          <label htmlFor="name">name</label>
+          <input
+            type="text"
+            name="name"
+            className="name"
+            placeholder="your name..."
+          />
+        </div>
+        {/*end of single item*/}
+        {/*single item*/}
+        <div className="singleItem">
+          <label htmlFor="lastname">lastname</label>
+          <input
+            type="text"
+            name="lastname"
+            className="lastname"
+            placeholder="your lastname..."
+          />
+        </div>
+        {/*end of single item*/}
+        {/*single item*/}
+        <div className="singleItem">
+          <label htmlFor="email">email</label>
+          <input
+            type="text"
+            name="name"
+            className="name"
+            placeholder="your name..."
+          />
+        </div>
+        {/*end of single item*/}
       </form>
     </div>
   );
