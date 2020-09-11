@@ -58,7 +58,7 @@ function Contact() {
   return (
     <div className="container">
       <h1>Contact Me</h1>
-      <form>
+      <form onSubmit={formSubmit}>
         {/*single item*/}
         <div className="singleItem">
           <label htmlFor="name">Name</label>
@@ -96,6 +96,7 @@ function Contact() {
             placeholder="your email..."
             value={email}
             onChange={handleEmail}
+            required
           />
         </div>
         {/*end of single item*/}
@@ -113,7 +114,9 @@ function Contact() {
           ></textarea>
         </div>
         {/*end of single item*/}
-        <div className="msg">Message has been sent</div>
+        <div className={sent ? "msg msgAppear" : "msg"}>
+          Message has been sent
+        </div>
         <div className="btn">
           <button type="submit">Submit</button>
         </div>
