@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid } from "semantic-ui-react";
 import SkillCard from "../About/SkillCard";
+import Card2 from "../Shared/Card2";
 
 function Projects() {
   return (
@@ -10,13 +11,7 @@ function Projects() {
       <Grid divided="vertically">
         <Grid.Row columns={3}>
           <Grid.Column>
-            <SkillCard
-              imageSrc="/DatabaseIcon.png"
-              FieldTitle="NETFLIX CLONE"
-              SkillOne="PostgreSQL"
-              SkillTwo="MySQL"
-              SkillThree="MongoDB"
-            />
+            <Card2 />
           </Grid.Column>
           <Grid.Column>
             <SkillCard
