@@ -1,10 +1,34 @@
 import React from "react";
 import { Timeline, Event } from "react-trivial-timeline";
 import { Grid } from "semantic-ui-react";
+import "./Resume.css";
 
 function Resume() {
   return (
-    <div>
+    <div class="Resume_container">
+      <div class="timeline">
+        <ul>
+          <li class="date" data-date="2011 - Present">
+            <h1>Google</h1>
+            <p>
+              fdajf;dlkaf;jdkafdjs;afkldjsakfdlja;fdlksafjdkfjdkla;fdlksajfdka;fdjkasfda;
+            </p>
+          </li>
+          <li class="date" data-date="2008 - 2011">
+            <h1>Facebook</h1>
+            <p>
+              fdajf;dlkaf;jdkafdjs;afkldjsakfdlja;fdlksafjdkfjdkla;fdlksajfdka;fdjkasfda;
+            </p>
+          </li>
+          <li class="date" data-date="2002 - 2008">
+            <h1>Airbnb</h1>
+            <p>
+              fdajf;dlkaf;jdkafdjs;afkldjsakfdlja;fdlksafjdkfjdkla;fdlksajfdka;fdjkasfda;
+            </p>
+          </li>
+        </ul>
+      </div>
+
       <h1>Resume</h1>
 
       <Grid divided="vertically">

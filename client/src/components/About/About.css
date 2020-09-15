@@ -1,8 +1,34 @@
+.About_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.About_heading {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0;
+  margin-bottom: 6rem;
+}
 .image {
-  width: 100px;
   height: 100px;
+  width: 100px;
 }
 
-.Introduction {
-  background-color: beige;
+.About_heading h1 {
+  font-size: 5rem;
+  opacity: 0.6;
+}
+
+.About_details {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.About_details p {
+  width: 30%;
+}
+.About_skillcards {
+  display: flex;
+  margin: 20px;
 }

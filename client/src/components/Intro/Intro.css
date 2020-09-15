@@ -31,3 +31,17 @@
   width: 300px;
   margin: 5px;
 }
+
+.linkedin-square:hover {
+  color: #38a1f3;
+  background-color: lightpink;
+}
+.github-square:hover {
+  color: #38a1f3;
+}
+.twitter-square:hover {
+  color: #38a1f3;
+}
+.mail-square:hover {
+  color: #38a1f3;
+}

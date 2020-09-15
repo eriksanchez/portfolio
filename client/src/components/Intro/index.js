@@ -13,10 +13,10 @@ function Intro() {
         class="SE_title"
       />
       <div>
-        <Icon name="linkedin" size="huge" />
-        <Icon name="github" size="huge" />
-        <Icon name="twitter square" size="huge" />
-        <Icon name="mail" size="huge" />
+        <Icon name="linkedin" size="huge" class="linkedin-square" />
+        <Icon name="github" size="huge" class="github-square" />
+        <Icon name="twitter square" size="huge" class="twitter-square" />
+        <Icon name="mail" size="huge" class="mail-square" />
       </div>
     </div>
   );

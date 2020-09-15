@@ -11,25 +11,19 @@ function Projects() {
       <Grid divided="vertically">
         <Grid.Row columns={3}>
           <Grid.Column>
+            <Card2
+              Title="AIRBNB CLONE"
+              Detail1="HTML5"
+              Detail2="CSS3 | SASS"
+              Detail3="JAVASCRIPT"
+              Detail4="REACT | REDUX"
+            />
+          </Grid.Column>
+          <Grid.Column>
             <Card2 />
           </Grid.Column>
           <Grid.Column>
-            <SkillCard
-              imageSrc="/DatabaseIcon.png"
-              FieldTitle="COVID-19 TRACKER"
-              SkillOne="PostgreSQL"
-              SkillTwo="MySQL"
-              SkillThree="MongoDB"
-            />
-          </Grid.Column>
-          <Grid.Column>
-            <SkillCard
-              imageSrc="/DatabaseIcon.png"
-              FieldTitle="TRANSFER MARKET ITALY"
-              SkillOne="PostgreSQL"
-              SkillTwo="MySQL"
-              SkillThree="MongoDB"
-            />
+            <Card2 />
           </Grid.Column>
         </Grid.Row>
 
@@ -94,6 +88,9 @@ function Projects() {
           </Grid.Column>
         </Grid.Row>
       </Grid>
+      <Card2 />
+      <Card2 />
+      <Card2 />
     </div>
   );
 }
