@@ -25,23 +25,40 @@
 .Title {
   width: 500px;
   margin: 5px;
+  opacity: 0;
 }
 
 .SE_title {
   width: 300px;
   margin: 5px;
+  opacity: 0;
+}
+.linkedin-square {
+  height: 50px;
+  width: 50px;
+}
+.github-square {
+  height: 50px;
+  width: 50px;
+}
+.twitter-square {
+  height: 50px;
+  width: 50px;
+}
+.mail-square {
+  height: 50px;
+  width: 50px;
 }
 
 .linkedin-square:hover {
-  color: #38a1f3;
-  background-color: lightpink;
+  transform: scale(1.5);
 }
 .github-square:hover {
-  color: #38a1f3;
+  transform: scale(1.5);
 }
 .twitter-square:hover {
-  color: #38a1f3;
+  transform: scale(1.5);
 }
 .mail-square:hover {
-  color: #38a1f3;
+  transform: scale(1.5);
 }
