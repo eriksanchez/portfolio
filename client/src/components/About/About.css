@@ -10,11 +10,14 @@
   line-height: 0;
   margin-bottom: 6rem;
 }
+.About_description {
+  margin: 50px;
+}
 .image {
   height: 100px;
   width: 100px;
+  margin: 20px;
 }
-
 .About_heading h1 {
   font-size: 5rem;
   opacity: 0.6;

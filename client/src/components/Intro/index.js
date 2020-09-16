@@ -15,11 +15,7 @@ function Intro() {
 
   useEffect(() => {
     TweenMax.to(TitleName, 0.8, { opacity: 1, y: -20, ease: Power3.easeOut });
-    TweenMax.to(linkedinIcon, 0.8, {
-      opacity: 1,
-      x: -20,
-      ease: Power3.easeOut,
-    });
+
     TweenMax.to(subTitle, 0.8, {
       opacity: 1,
       y: -20,
@@ -48,27 +44,34 @@ function Intro() {
         class="SE_title"
       />
       <div class="Intro_icons">
-        <img
-          ref={(el) => {
-            linkedinIcon = el;
-          }}
-          src="/Icons/linkedinIcon.png"
-          class="linkedin-square"
-        />
-        <img
-          ref={(el) => {
-            githubIcon = el;
-          }}
-          src="/Icons/githubIcon.png"
-          class="github-square"
-        />
-        <img
-          ref={(el) => {
-            twitterIcon = el;
-          }}
-          src="/Icons/TwitterIcon.png"
-          class="twitter-square"
-        />
+        <a href="https://www.linkedin.com/in/erik-sanchez-471b0096/">
+          <img
+            ref={(el) => {
+              linkedinIcon = el;
+            }}
+            src="/Icons/linkedinIcon.png"
+            class="linkedin-square"
+          />
+        </a>
+        <a href="https://github.com/eriksanchez">
+          <img
+            ref={(el) => {
+              githubIcon = el;
+            }}
+            src="/Icons/githubIcon.png"
+            class="github-square"
+          />
+        </a>
+        <a href="https://twitter.com/eriksanchezdev">
+          <img
+            ref={(el) => {
+              twitterIcon = el;
+            }}
+            src="/Icons/TwitterIcon.png"
+            class="twitter-square"
+          />
+        </a>
+
         <img
           ref={(el) => {
             emailIcon = el;

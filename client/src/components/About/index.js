@@ -10,7 +10,7 @@ function About() {
         <h1>Who am I?</h1>
       </div>
       <div class="About_details">
-        <p>
+        <p class="About_description">
           I am a results driven motivated Software Engineer with professional
           experience creating full stack web and mobile applications.
         </p>

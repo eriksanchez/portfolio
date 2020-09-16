@@ -21,6 +21,9 @@
   width: 50px;
   margin: 10px;
 }
+.ES_logo:hover {
+  transform: scale(1.5);
+}
 
 .Title {
   width: 500px;
@@ -36,18 +39,22 @@
 .linkedin-square {
   height: 50px;
   width: 50px;
+  margin: 20px;
 }
 .github-square {
   height: 50px;
   width: 50px;
+  margin: 20px;
 }
 .twitter-square {
   height: 50px;
   width: 50px;
+  margin: 20px;
 }
 .mail-square {
   height: 50px;
   width: 50px;
+  margin: 20px;
 }
 
 .linkedin-square:hover {
