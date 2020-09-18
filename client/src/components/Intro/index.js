@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import "./Intro.css";
 import { Icon } from "semantic-ui-react";
-
+import { textIntro } from "../Shared/animate";
 import { TweenMax, Power3 } from "gsap";
 
 function Intro() {
@@ -14,8 +14,7 @@ function Intro() {
   let emailIcon = useRef(null);
 
   useEffect(() => {
-    TweenMax.to(TitleName, 0.8, { opacity: 1, y: -20, ease: Power3.easeOut });
-
+    textIntro(TitleName);
     TweenMax.to(subTitle, 0.8, {
       opacity: 1,
       y: -20,
@@ -27,14 +26,14 @@ function Intro() {
   return (
     <div class="Intro">
       <img src="/ES_logo.png" alt="logo" class="ES_logo" />
-      <img
+      <h1
         ref={(el) => {
           TitleName = el;
         }}
-        src="/ErikSanchezTitle.png"
-        alt="Erik Sanchez"
         class="Title"
-      />
+      >
+        Erik Sanchez
+      </h1>
       <img
         ref={(el) => {
           subTitle = el;

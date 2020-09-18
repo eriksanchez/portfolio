@@ -88,9 +88,6 @@ function Projects() {
           </Grid.Column>
         </Grid.Row>
       </Grid>
-      <Card2 />
-      <Card2 />
-      <Card2 />
     </div>
   );
 }
