@@ -12,25 +12,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerEase(ScrollTrigger);
 
 function App() {
-  useEffect(() => {
-    gsap.from(".About_comp", {
-      duration: 3,
-      y: "100",
-      opacity: 0,
-      ease: "ease-in",
-      scrollTrigger: {
-        trigger: ".About_description",
-        start: "top 90%",
-        end: "bottom 60%",
-        markers: true,
-        toggleActions: "restart complete reverse reset",
-      },
-    });
-  }, []);
+  useEffect(() => {}, []);
   return (
     <div className="App">
       <Intro />
-      <About class="About_comp" />
+      <About />
       <Resume />
       <Projects />
       <Contact />
