@@ -12,7 +12,24 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerEase(ScrollTrigger);
 
 function App() {
-  useEffect(() => {}, []);
+  const sectionRef = useRef(null);
+  const intersection = useIntersection(sectionRef, {
+    root: null,
+    rootMargin: "0px",
+    threshold: 1,
+  });
+
+  const fadeIn = (element) => {
+    gsap.to(element, 1, {
+      opacity: 1,
+      y: -60,
+      ease: "power4.out",
+      stagger: {
+        amount: 0.2,
+      },
+    });
+  };
+  intersection && intersection.intersectionRation < 1 ? fadeOut() : fadeIn();
   return (
     <div className="App">
       <Intro />
