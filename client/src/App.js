@@ -25,14 +25,14 @@ function App() {
       y: -60,
       ease: "power4.out",
       stagger: {
-        amount: 0.2,
+        amount: 0.3,
       },
     });
   };
   intersection && intersection.intersectionRation < 1 ? fadeOut() : fadeIn();
   return (
-    <div className="App">
-      <Intro />
+    <div>
+      <Intro ref={Int} />
       <About />
       <Resume />
       <Projects />
