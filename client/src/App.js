@@ -76,13 +76,12 @@ function App() {
       );
     });*/
     }
-    textIntro(AboutRef);
   }, []);
 
   return (
     <div>
       <Intro />
-      <About CompRef={AboutRef} />
+      <About />
       {/*<Intro />
       <About />
       <Resume />

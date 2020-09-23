@@ -2,8 +2,8 @@ import React, { useRef, useEffect } from "react";
 import "./Intro.css";
 import { Icon } from "semantic-ui-react";
 import { textIntro } from "../Shared/animate";
-import { TweenMax, Power3 } from "gsap";
-
+import { TweenMax, Power3, TweenLite } from "gsap";
+import FadeIn from "../Shared/FadeIn";
 function Intro() {
   let TitleName = useRef(null);
   let subTitle = useRef(null);
@@ -26,6 +26,9 @@ function Intro() {
   return (
     <div class="Intro">
       <img src="/ES_logo.png" alt="logo" class="ES_logo" />
+      <FadeIn wrapperElement="h1" direction="down">
+        WHat it do young g
+      </FadeIn>
       <h1
         ref={(el) => {
           TitleName = el;

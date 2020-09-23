@@ -2,13 +2,22 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export const textIntro = (elem) => {
-  gsap.from(elem.current, {
+  gsap.from(elem, {
     xPercent: -20,
     opacity: 0,
     stagger: 0.2,
     duration: 2,
     scale: -1,
     ease: "back",
+  });
+};
+
+export const backgroundFadeIn = (elem) => {
+  gsap.from(elem.current, {
+    opacity: 0,
+    duration: 3,
+    scale: 1,
+    ease: "in",
   });
 };
 
