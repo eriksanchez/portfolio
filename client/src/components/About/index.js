@@ -7,11 +7,12 @@ import SkillCard from "./SkillCard";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerEase(ScrollTrigger);
 
-function About() {
+function About({ CompRef }) {
   let t1 = new TimelineLite({ delay: 0.3 });
   useEffect(() => {
     {
-      t1.from(
+      {
+        /** t1.from(
         ".About_description",
         { y: 15, opacity: 0, ease: Power3.easeOut, delay: 0.2 },
         "Start"
@@ -38,7 +39,8 @@ function About() {
             delay: 0.2,
           },
           0.35
-        );
+        ); */
+      }
     }
   }, []);
 
@@ -47,7 +49,7 @@ function About() {
       <div class="About_heading">
         <h1>Who am I?</h1>
       </div>
-      <div class="About_details">
+      <div class="About_details" ref={(el) => (CompRef = el)}>
         <p class="About_description">
           I am a results driven motivated Software Engineer with professional
           experience creating full stack web and mobile applications.
