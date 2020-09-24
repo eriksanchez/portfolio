@@ -28,7 +28,9 @@ function Intro() {
       <img src="/ES_logo.png" alt="logo" class="ES_logo" />
       <FadeIn wrapperElement="h1" direction="down">
         WHat it do young g
+        <img src="/nodeImage.jpg" />
       </FadeIn>
+      <FadeIn wrapperElement="img" direction="right"></FadeIn>
       <h1
         ref={(el) => {
           TitleName = el;
