@@ -1,17 +1,12 @@
 import React, { useRef, useEffect } from "react";
 import "./Intro.css";
-import { Icon } from "semantic-ui-react";
 import { textIntro } from "../Shared/animate";
-import { TweenMax, Power3, TweenLite } from "gsap";
+import { TweenMax, Power3 } from "gsap";
 import FadeIn from "../Shared/FadeIn";
+
 function Intro() {
   let TitleName = useRef(null);
   let subTitle = useRef(null);
-
-  let linkedinIcon = useRef(null);
-  let githubIcon = useRef(null);
-  let twitterIcon = useRef(null);
-  let emailIcon = useRef(null);
 
   useEffect(() => {
     textIntro(TitleName);
@@ -28,61 +23,29 @@ function Intro() {
       <img src="/ES_logo.png" alt="logo" class="ES_logo" />
       <FadeIn wrapperElement="h1" direction="down">
         WHat it do young g
-        <img src="/nodeImage.jpg" />
       </FadeIn>
       <FadeIn wrapperElement="img" direction="right"></FadeIn>
-      <h1
-        ref={(el) => {
-          TitleName = el;
-        }}
-        class="Title"
-      >
+      <h1 class="Title" ref={(el) => (TitleName = el)}>
         Erik Sanchez
       </h1>
       <img
-        ref={(el) => {
-          subTitle = el;
-        }}
         src="/SoftwareEngineer.png"
         alt="Software Engineer"
         class="SE_title"
+        ref={(el) => (subTitle = el)}
       />
       <div class="Intro_icons">
         <a href="https://www.linkedin.com/in/erik-sanchez-471b0096/">
-          <img
-            ref={(el) => {
-              linkedinIcon = el;
-            }}
-            src="/Icons/linkedinIcon.png"
-            class="linkedin-square"
-          />
+          <img src="/Icons/linkedinIcon.png" class="linkedin-square" />
         </a>
         <a href="https://github.com/eriksanchez">
-          <img
-            ref={(el) => {
-              githubIcon = el;
-            }}
-            src="/Icons/githubIcon.png"
-            class="github-square"
-          />
+          <img src="/Icons/githubIcon.png" class="github-square" />
         </a>
         <a href="https://twitter.com/eriksanchezdev">
-          <img
-            ref={(el) => {
-              twitterIcon = el;
-            }}
-            src="/Icons/TwitterIcon.png"
-            class="twitter-square"
-          />
+          <img src="/Icons/TwitterIcon.png" class="twitter-square" />
         </a>
 
-        <img
-          ref={(el) => {
-            emailIcon = el;
-          }}
-          src="Icons/mailicon.png"
-          class="mail-square"
-        />
+        <img src="Icons/mailicon.png" class="mail-square" />
       </div>
     </div>
   );

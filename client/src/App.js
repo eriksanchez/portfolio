@@ -82,22 +82,10 @@ function App() {
     <div>
       <Intro />
       <About />
-      {/*<Intro />
-      <About />
       <Resume />
       <Projects />
       <Contact />
       <h5>©2020 Erik Sanchez. All Rights Reserved.</h5>
-      <header ref={headerRef} className="Test-header">
-        <img src="/ES_logo.png" className="Test-logo" alt="logo"></img>
-        <button onClick={() => toggleBackground()}>Change Background</button>
-      </header>
-      {sections.map(({ title, subtitle }) => (
-        <div className="Test-App-Section" key={title} ref={addToRefs}>
-          <h2>{title}</h2>
-          <p>{subtitle}</p>
-        </div>
-      ))}*/}
     </div>
   );
 }
