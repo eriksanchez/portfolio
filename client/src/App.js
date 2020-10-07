@@ -85,7 +85,7 @@ function App() {
       <Resume />
       <Projects />
       <Contact />
-      <h5>©2020 Erik Sanchez. All Rights Reserved.</h5>
+      <h5>©2020 Erik Sanchez. All Rights Reserved. Testing</h5>
     </div>
   );
 }
